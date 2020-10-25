@@ -1,0 +1,43 @@
+@import '../../sass/variables';
+
+.home{
+    background-color: $color-black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.home-logo{
+    color: white;
+    font-size: 5rem;
+    //font-weight: 2rem;
+    border: 2px solid white;
+    width: 25%;
+    margin-left: -5rem;
+    position: relative;
+}
+
+.logo{
+   margin-left: 4rem;
+   margin-top: 2rem;
+}
+
+.home-sections{
+    // width: 20rem;
+    // height: 10rem;
+    display: flex;
+    border: 2px solid red;
+
+}
+
+.home-links{
+    // margin-left: 10%;
+    // margin-top: 5%;
+}
+
+.testImg{
+    width: 28rem;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}

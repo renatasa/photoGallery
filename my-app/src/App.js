@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Home from './components/Home/Home';
+import Section from './components/Section/Section';
 
-function App() {
-  return (
-    <div className="App">
-      <div>font family</div>
-    </div>
-  );
+
+export class App extends Component {
+  render() {
+    return (
+      <div>
+        <Section/>
+      </div>
+    )
+  }
 }
 
 export default App;
