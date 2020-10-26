@@ -1,6 +1,6 @@
-.menu{
+// .menu{
 
-}
+// }
 
 .section-title{
     font-size: 2rem;
@@ -8,6 +8,16 @@
     letter-spacing: 5px;
     font-weight: 10;
 }
+
+// .photos{
+    
+// }
+
+.photo-row{
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .rowImg{
     width: 30%;

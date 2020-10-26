@@ -1,5 +1,6 @@
 import React from 'react';
 import './Section.scss';
+import {NavLink} from 'react-router-dom';
 import one from '../../assets/img/large/1.jpg';
 import two from '../../assets/img/large/2.jpg';
 import three from '../../assets/img/large/3.jpg';
@@ -32,15 +33,15 @@ export const section=()=>{
                <div class="home-logo">
                     <div class="logo">Logo</div>
                </div>
-                    <div class="section-title">people</div>
-                    <div class="section-title">landscape</div>
-                    <div class="section-title">street</div>
-                    <div class="section-title">reportage</div>
-                    <div class="section-title">siluets</div>
-                    <div class="section-title">travel</div>
+               <NavLink to="/people">  <div class="section-title">people</div></NavLink>
+               <NavLink to="/landscape"><div class="section-title">landscape</div></NavLink> 
+               <NavLink to="/street"><div class="section-title">street</div></NavLink> 
+               <NavLink to="/reportage"><div class="section-title">reportage</div></NavLink> 
+               <NavLink to="/siluets"><div class="section-title">siluets</div></NavLink> 
+               <NavLink to="/travel"><div class="section-title">travel</div></NavLink> 
                </div>
 
-                <div class="home-links">
+                <div class="photos">
 
                 <div class="photo-row">
                  <img class="rowImg" src={one} alt="imgOne"/>
