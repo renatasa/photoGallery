@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Home from './components/Home/Home';
+//import Home from './components/Home/Home';
 import Section from './components/Section/Section';
+import Landscape from './components/Landscape/Landscape';
 import {Route, Switch} from 'react-router-dom';
 
 
@@ -35,7 +36,8 @@ export class App extends Component {
 
         </Switch>  */}
 
-        <Section/>
+        <Landscape/>
+
       </div>
     )
   }

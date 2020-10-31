@@ -1,88 +1,69 @@
 import React from 'react';
 import './Section.scss';
 import {NavLink} from 'react-router-dom';
-import one from '../../assets/img/large/1.jpg';
-import two from '../../assets/img/large/2.jpg';
-import three from '../../assets/img/large/3.jpg';
-import four from '../../assets/img/large/4.jpg';
-import five from '../../assets/img/large/5.jpg';
-import six from '../../assets/img/large/6.jpg';
-import seven from '../../assets/img/large/7.jpg';
-import eight from '../../assets/img/large/8.jpg';
-import nine from '../../assets/img/large/9.jpg';
-import ten from '../../assets/img/large/10.jpg';
-import eleven from '../../assets/img/large/11.jpg';
-import twelve from '../../assets/img/large/12.jpg';
-import thirteen from '../../assets/img/large/13.jpg';
-import fourteen from '../../assets/img/large/14.jpg';
-import fifteen from '../../assets/img/large/15.jpg';
-import sixteen from '../../assets/img/large/16.jpg';
-import seventeen from '../../assets/img/large/17.jpg';
-import eighteen from '../../assets/img/large/18.jpg';
-import nineteen from '../../assets/img/large/19.jpg';
-import twenty from '../../assets/img/large/20.jpg';
 
-
-export const section=()=>{
+export const section=(props)=>{
         
     return (
-            <div class="home">
-                thos is home
+        <div class="home">
 
-               <div class="menu">
-               <div class="home-logo">
-                    <div class="logo">Logo</div>
-               </div>
-               <NavLink to="/people">  <div class="section-title">people</div></NavLink>
-               <NavLink to="/landscape"><div class="section-title">landscape</div></NavLink> 
-               <NavLink to="/street"><div class="section-title">street</div></NavLink> 
-               <NavLink to="/reportage"><div class="section-title">reportage</div></NavLink> 
-               <NavLink to="/siluets"><div class="section-title">siluets</div></NavLink> 
-               <NavLink to="/travel"><div class="section-title">travel</div></NavLink> 
-               </div>
 
-                <div class="photos">
+       <div class="menu">
+       <div class="home-logo">
+            <div class="logo">Logo</div>
+       </div>
+       <NavLink to="/people">  <div class="section-title">people</div></NavLink>
+       <NavLink to="/landscape"><div class="section-title">landscape</div></NavLink> 
+       <NavLink to="/street"><div class="section-title">street</div></NavLink> 
+       <NavLink to="/reportage"><div class="section-title">reportage</div></NavLink> 
+       <NavLink to="/siluets"><div class="section-title">siluets</div></NavLink> 
+       <NavLink to="/travel"><div class="section-title">travel</div></NavLink> 
+       </div>
 
-                <div class="photo-row">
-                 <img class="rowImg" src={one} alt="imgOne"/>
-                 <img class="rowImg" src={two} alt="imgTwo"/>
-                 <img class="rowImg" src={three} alt="imgThree"/>
-                </div>
 
-                <div class="photo-row">
-                 <img class="rowImg" src={four} alt="imgFour"/>
-                 <img class="rowImg" src={five} alt="imgFive"/>
-                 <img class="rowImg" src={six} alt="imgSix"/>
-                </div>
 
-                <div class="photo-row">
-                 <img class="rowImg" src={seven} alt="imgSeven"/>
-                 <img class="rowImg" src={eight} alt="imgEight"/>
-                 <img class="rowImg" src={nine} alt="imgNine"/>
-                </div>
+        <div class="photos">
+        <div class="photo-row">
+         <img class="rowImg" src={props.one} alt="imgOne"/>
+         <img class="rowImg" src={props.two} alt="imgTwo"/>
+         <img class="rowImg" src={props.three} alt="imgThree"/>
+        </div>
 
-                <div class="photo-row">
-                 <img class="rowImg" src={ten} alt="imgTen"/>
-                 <img class="rowImg" src={eleven} alt="imgEleven"/>
-                 <img class="rowImg" src={twelve} alt="imgTwelve"/>
-                </div>
+        <div class="photo-row">
+         <img class="rowImg" src={props.four} alt="imgFour"/>
+         <img class="rowImg" src={props.five} alt="imgFive"/>
+         <img class="rowImg" src={props.six} alt="imgSix"/>
+        </div>
 
-                <div class="photo-row">
-                 <img class="rowImg" src={thirteen} alt="imgThirteen"/>
-                 <img class="rowImg" src={fourteen} alt="imgFourteen"/>
-                 <img class="rowImg" src={fifteen} alt="imgFifteen"/>
-                </div>
+        <div class="photo-row">
+         <img class="rowImg" src={props.seven} alt="imgSeven"/>
+         <img class="rowImg" src={props.eight} alt="imgEight"/>
+         <img class="rowImg" src={props.nine} alt="imgNine"/>
+        </div>
 
-                
-                <div class="photo-row">
-                 <img class="rowImg" src={sixteen} alt="imgSeventeen"/>
-                 <img class="rowImg" src={seventeen} alt="imgEighteen"/>
-                 <img class="rowImg" src={eighteen} alt="imgTwenty"/>
-                </div>
+        <div class="photo-row">
+         <img class="rowImg" src={props.ten} alt="imgTen"/>
+         <img class="rowImg" src={props.eleven} alt="imgEleven"/>
+         <img class="rowImg" src={props.twelve} alt="imgTwelve"/>
+        </div>
 
-                </div>
+        <div class="photo-row">
+         <img class="rowImg" src={props.thirteen} alt="imgThirteen"/>
+         <img class="rowImg" src={props.fourteen} alt="imgFourteen"/>
+         <img class="rowImg" src={props.fifteen} alt="imgFifteen"/>
+        </div>
 
-            </div>
+        
+        <div class="photo-row">
+         <img class="rowImg" src={props.sixteen} alt="imgSeventeen"/>
+         <img class="rowImg" src={props.seventeen} alt="imgEighteen"/>
+         <img class="rowImg" src={props.eighteen} alt="imgTwenty"/>
+        </div>
+
+        </div>
+        
+
+    </div>
         )
     }
 
