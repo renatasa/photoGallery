@@ -3,10 +3,10 @@ import './Home.scss';
 import {NavLink} from 'react-router-dom';
 import people from '../../assets/img/genre/people.jpg';
 import landscape from '../../assets/img/genre/landscape.jpg';
-import street from '../../assets/img/genre/Street.jpg';
+import street from '../../assets/img/genre/street.jpg';
 import reportage from '../../assets/img/genre/reportage.jpg';
 import siluets from '../../assets/img/genre/siluets.jpg';
-import travel from '../../assets/img/genre/Travel.jpg';
+import travel from '../../assets/img/genre/travel.jpg';
 
 
 export const home=()=>{
