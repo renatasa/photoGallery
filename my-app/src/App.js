@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Home from './components/Home/Home';
-import Section from './components/Section/Section';
+import Landscape from './components/Landscape/Landscape';
+import People from './components/People/People';
+import Street from './components/Street/Street';
+import Siluets from './components/Siluets/Siluets';
+import Reportage from './components/Reportage/Reportage';
+import Travel from './components/Travel/Travel';
 import {Route, Switch} from 'react-router-dom';
 
 
@@ -8,7 +13,7 @@ export class App extends Component {
   render() {
     return (
       <div>
-        {/* <Switch>
+        <Switch>
           <Route path="/people">
             <People />
           </Route>
@@ -33,9 +38,12 @@ export class App extends Component {
             <Travel/>
           </Route>
 
-        </Switch>  */}
+          <Route exact path="/">
+            <Home/>
+          </Route>
 
-        <Section/>
+        </Switch> 
+
       </div>
     )
   }

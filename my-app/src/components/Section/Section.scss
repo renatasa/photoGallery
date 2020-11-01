@@ -1,6 +1,18 @@
-// .menu{
+.home{
+    display: flex;
+}
 
-// }
+.menu{
+    background-color: black;
+    width: 20%;
+    padding-left: 1rem;
+}
+.logo{
+    color: white;
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
 
 .section-title{
     font-size: 2rem;
@@ -9,9 +21,9 @@
     font-weight: 10;
 }
 
-// .photos{
-    
-// }
+.photos{
+    width: 80%;
+}
 
 .photo-row{
     display: flex;
@@ -20,6 +32,6 @@
 
 
 .rowImg{
-    width: 30%;
+    width: 33%;
     border: 1px solid black;
 }
