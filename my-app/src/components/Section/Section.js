@@ -3,7 +3,7 @@ import './Section.scss';
 import {NavLink} from 'react-router-dom';
 import Slideshow from '../Slideshow/Slideshow';
 
-export class Section2 extends Component {
+export class Section extends Component {
     constructor() {
         super();  
         this.state={
@@ -147,4 +147,4 @@ export class Section2 extends Component {
     }
 }
 
-export default Section2
+export default Section

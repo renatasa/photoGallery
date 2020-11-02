@@ -35,4 +35,12 @@
     width: 33%;
     border: 1px solid black;
     cursor: pointer;
+    transition: filter .2s;
 }
+
+.rowImg:hover{
+    filter: brightness(0.8);
+    -webkit-filter: brightness(0.8);
+}
+
+

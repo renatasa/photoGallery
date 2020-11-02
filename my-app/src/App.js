@@ -40,7 +40,7 @@ export class App extends Component {
           </Route>
 
           <Route exact path="/">
-            <Slideshow/>
+            <Home/>
           </Route>
 
         </Switch> 
