@@ -26,8 +26,6 @@
     // width: 20rem;
     // height: 10rem;
     display: flex;
-    border: 2px solid red;
-
 }
 
 .home-links{
@@ -35,9 +33,20 @@
     // margin-top: 5%;
 }
 
-.testImg{
+.menuImg{
+    width: 28rem;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+.menuImg:hover{
+    transform: scale(1.2);
+}
+
+.imgParent{
     width: 28rem;
     border-radius: 8px;
     border: 1px solid black;
     cursor: pointer;
+    overflow: hidden;
 }

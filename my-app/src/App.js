@@ -6,6 +6,7 @@ import Street from './components/Street/Street';
 import Siluets from './components/Siluets/Siluets';
 import Reportage from './components/Reportage/Reportage';
 import Travel from './components/Travel/Travel';
+import Slideshow from './components/Slideshow/Slideshow';
 import {Route, Switch} from 'react-router-dom';
 
 
