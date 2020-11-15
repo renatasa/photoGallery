@@ -46,3 +46,40 @@
   .cursor {
     cursor: pointer;
   }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .fade2{
+    -webkit-animation-name: fade2;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade2;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    0% {opacity: .4;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fade {
+    0% {opacity: .4; left: 10px;}
+    100% {opacity: 1; left: 50px;}
+  }
+
+  @-webkit-keyframes fade2 {
+    0% {opacity: .4;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fade2 {
+    0% {opacity: .4; left: 10px;}
+    100% {opacity: 1; left: 50px;}
+  }
+
+
+

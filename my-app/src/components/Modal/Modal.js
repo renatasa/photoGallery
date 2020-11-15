@@ -13,7 +13,8 @@ const modal =(props)=>{
                       plusSlide={props.plusSlide}  
                       minusSlide={props.minusSlide} 
                       closeSlide={props.closeSlide}
-                      currentImg={props.currentImg}/>
+                      currentImg={props.currentImg}
+                      photoFade={props.photoFade}/>
     </div>
     </div>
     )

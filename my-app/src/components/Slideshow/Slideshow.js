@@ -9,7 +9,7 @@ export const slideshow=(props)=>{
                    <span class="close cursor" onClick={props.closeSlide}>&times;</span>
                
                     <a class="prev" onClick={props.minusSlide}>&#10094;</a>
-                    <img class="slideImg"  src={props.currentImg} alt="imgOne"/>
+                    <img class={props.photoFade==null || props.photoFade==0 ? "slideImg fade" : "slideImg fade2"}  src={props.currentImg} alt="imgOne"/>
                     <a class="next" onClick={props.plusSlide}>&#10095;</a>
                    
                 </div>
