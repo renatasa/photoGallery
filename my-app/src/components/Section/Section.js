@@ -12,7 +12,8 @@ export class Section extends Component {
             selectedPhoto: null, 
             selectedPhotoKey:null,
             allPhotosSmall:[], 
-            allPhotosLarge:[]
+            allPhotosLarge:[], 
+            photoFade: null
         }
     }
 
@@ -42,13 +43,20 @@ export class Section extends Component {
 
     
     closeSlide=()=>{
-        this.setState({slideshow: false, selectedPhoto: null, selectedPhotoKey: null})
+        this.setState({slideshow: false, selectedPhoto: null, selectedPhotoKey: null, photoFade: null})
     }   
 
     plusSlide=()=>{
+        let fade=null;
         if(this.state.selectedPhotoKey<this.state.allPhotosLarge.length){
             let x=this.state.selectedPhotoKey+1;
-            this.setState({selectedPhoto: this.state.allPhotosLarge[this.state.selectedPhotoKey+1], selectedPhotoKey: x})
+            if (x%2==0){
+                fade=0
+            } else {
+                fade=1;
+            }
+
+            this.setState({selectedPhoto: this.state.allPhotosLarge[this.state.selectedPhotoKey+1], selectedPhotoKey: x, photoFade: fade})
         }
        
     }
@@ -63,6 +71,7 @@ export class Section extends Component {
 
 
     render() {
+        console.log('fade ', this.state.photoFade)
         let result=null;
              result =<div class="home">
 
@@ -129,7 +138,8 @@ export class Section extends Component {
                        plusSlide={this.plusSlide}  
                        minusSlide={this.minusSlide} 
                        closeSlide={this.closeSlide}
-                       currentImg={this.state.selectedPhoto}/> 
+                       currentImg={this.state.selectedPhoto}
+                       photoFade={this.state.photoFade}/> 
             </div>
         )
     }
