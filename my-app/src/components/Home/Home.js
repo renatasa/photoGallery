@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import people from '../../assets/img/genre/people.jpg';
 import landscape from '../../assets/img/genre/landscape.jpg';
 import street from '../../assets/img/genre/street.jpg';
@@ -13,10 +13,9 @@ export const home=()=>{
 
     return (
             <div class="home">
-                thos is home
 
                <div class="home-logo">
-                    <div class="logo">Logo</div>
+                    Logo
                </div>
 
                 <div class="home-links">

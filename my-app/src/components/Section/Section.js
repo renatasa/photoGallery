@@ -75,17 +75,16 @@ export class Section extends Component {
         let result=null;
              result =<div class="home">
 
-
             <div class="menu">
             <div class="home-logo">
                  <div class="logo">Logo</div>
             </div>
-            <NavLink to="/people">  <div class="section-title">people</div></NavLink>
-            <NavLink to="/landscape"><div class="section-title">landscape</div></NavLink> 
-            <NavLink to="/street"><div class="section-title">street</div></NavLink> 
-            <NavLink to="/reportage"><div class="section-title">reportage</div></NavLink> 
-            <NavLink to="/siluets"><div class="section-title">siluets</div></NavLink> 
-            <NavLink to="/travel"><div class="section-title">travel</div></NavLink> 
+            <NavLink to="/people" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }}>  <div >people</div></NavLink>
+            <NavLink to="/landscape"  style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>landscape</div></NavLink> 
+            <NavLink to="/street" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>street</div></NavLink> 
+            <NavLink to="/reportage" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>reportage</div></NavLink> 
+            <NavLink to="/siluets" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>siluets</div></NavLink> 
+            <NavLink to="/travel" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>travel</div></NavLink> 
             </div>
      
              <div class="photos">
