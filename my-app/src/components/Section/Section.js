@@ -3,7 +3,6 @@ import './Section.scss';
 import {NavLink} from 'react-router-dom';
 import Modal from '../Modal/Modal';
 
-
 export class Section extends Component {
     constructor() {
         super();  
@@ -48,24 +47,35 @@ export class Section extends Component {
 
     plusSlide=()=>{
         let fade=null;
-        if(this.state.selectedPhotoKey<this.state.allPhotosLarge.length){
-            let x=this.state.selectedPhotoKey+1;
+        let x=null;
+        if(this.state.selectedPhotoKey<this.state.allPhotosLarge.length-1){
+            x=this.state.selectedPhotoKey+1;
             if (x%2==0){
                 fade=0
             } else {
                 fade=1;
             }
-
             this.setState({selectedPhoto: this.state.allPhotosLarge[this.state.selectedPhotoKey+1], selectedPhotoKey: x, photoFade: fade})
+           
+        } else  if(this.state.selectedPhotoKey=this.state.allPhotosLarge.length-1){
+            let x=0;
+            fade= 0;
+            this.setState({selectedPhoto: this.state.allPhotosLarge[0], selectedPhotoKey: x, photoFade: fade})
         }
+        
        
     }
 
     minusSlide=()=>{
-        console.log('minus slide ');
+        console.log('minus slide ', this.state.selectedPhotoKey);
         if(this.state.selectedPhotoKey>0){
             let x=this.state.selectedPhotoKey-1;
             this.setState({selectedPhoto: this.state.allPhotosLarge[this.state.selectedPhotoKey-1], selectedPhotoKey: x})
+        } 
+        
+        if(this.state.selectedPhotoKey==0){
+            let x=this.state.allPhotosLarge.length-1;
+            this.setState({selectedPhoto: this.state.allPhotosLarge[x], selectedPhotoKey: x})
         }
     }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import people from '../../assets/img/genre/people.jpg';
 import landscape from '../../assets/img/genre/landscape.jpg';
 import street from '../../assets/img/genre/street.jpg';
