@@ -13,10 +13,9 @@ export const home=()=>{
 
     return (
             <div class="home">
-                thos is home
 
                <div class="home-logo">
-                    <div class="logo">Logo</div>
+                    Logo
                </div>
 
                 <div class="home-links">

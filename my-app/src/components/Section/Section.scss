@@ -7,6 +7,32 @@
     width: 20%;
     padding-left: 1rem;
 }
+
+.menu a{
+    color:#f7f7f7;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 10;
+}
+
+.menu a:hover{
+    color: #C5C5C5;
+}
+
+.menu a.active{
+    color: #777;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 10;
+}
+
+.menu a:active{
+    color: #595858;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 10;
+}
+
 .logo{
     color: white;
     font-size: 5rem;
@@ -14,12 +40,26 @@
     margin-bottom: 2rem;
 }
 
+// .activeSection{
+//     font-size: 2rem;
+//     letter-spacing: 5px;
+//     font-weight: 10;
+//     color: chartreuse;
+// }
+
 .section-title{
     font-size: 2rem;
     color: white;
     letter-spacing: 5px;
     font-weight: 10;
 }
+
+// .section-title:focus{
+//     color: chartreuse;
+// }
+// .section-title:hover{
+//     color: chartreuse;
+// }
 
 .photos{
     width: 80%;
