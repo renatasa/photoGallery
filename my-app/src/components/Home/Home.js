@@ -14,7 +14,7 @@ export const home=()=>{
     return (
             <div class="home">
 
-               <div class="home-logo">
+               <div class="homeLogo">
                     Logo
                </div>
 

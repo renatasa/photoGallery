@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Section.scss';
-import {NavLink} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import Modal from '../Modal/Modal';
 
 export class Section extends Component {
@@ -67,7 +67,6 @@ export class Section extends Component {
     }
 
     minusSlide=()=>{
-        console.log('minus slide ', this.state.selectedPhotoKey);
         if(this.state.selectedPhotoKey>0){
             let x=this.state.selectedPhotoKey-1;
             this.setState({selectedPhoto: this.state.allPhotosLarge[this.state.selectedPhotoKey-1], selectedPhotoKey: x})
@@ -86,15 +85,29 @@ export class Section extends Component {
              result =<div class="home">
 
             <div class="menu">
+
             <div class="home-logo">
-                 <div class="logo">Logo</div>
+                <Link to="/" style={{textDecoration :'none'}}> <div class="logo">Logo</div></Link>
             </div>
-            <NavLink to="/people" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }}>  <div >people</div></NavLink>
-            <NavLink to="/landscape"  style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>landscape</div></NavLink> 
-            <NavLink to="/street" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>street</div></NavLink> 
-            <NavLink to="/reportage" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>reportage</div></NavLink> 
-            <NavLink to="/siluets" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>siluets</div></NavLink> 
-            <NavLink to="/travel" style={{ textDecoration: 'none', fontSize: '2rem',  letterSpacing: '5px', fontWeight: '10' }} ><div>travel</div></NavLink> 
+
+            <div class="navLinks">
+
+            <div class="navLinkPair">
+            <NavLink to="/people" style={{textDecoration: 'none'}}>  <div class="singleNavLink" >people</div></NavLink>
+            <NavLink to="/landscape"  style={{ textDecoration: 'none' }} ><div class="singleNavLink">landscape</div></NavLink> 
+            </div>
+
+            <div class="navLinkPair">
+            <NavLink to="/street" style={{ textDecoration: 'none' }} ><div class="singleNavLink">street</div></NavLink> 
+            <NavLink to="/reportage" style={{ textDecoration: 'none'}} ><div class="singleNavLink">reportage</div></NavLink> 
+            </div>
+
+            <div class="navLinkPair">
+            <NavLink to="/siluets" style={{ textDecoration: 'none'}} ><div class="singleNavLink">siluets</div></NavLink> 
+            <NavLink to="/travel" style={{ textDecoration: 'none'}} ><div class="singleNavLink">travel</div></NavLink> 
+            </div>
+
+            </div>
             </div>
      
              <div class="photos">
@@ -136,8 +149,7 @@ export class Section extends Component {
              </div>
      
              </div>
-             
-     
+            
          </div>
        
         return (

@@ -9,7 +9,7 @@ const modal =(props)=>{
     <div>
     <Backdrop show={props.show} closeSlide={props.closeSlide}/>
     <div class={props.show ? "Modal" : "ModalClosed"}>
-           <Slideshow slideshow={props.show}   
+           <Slideshow show={props.show}   
                       plusSlide={props.plusSlide}  
                       minusSlide={props.minusSlide} 
                       closeSlide={props.closeSlide}

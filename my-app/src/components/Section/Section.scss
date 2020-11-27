@@ -6,6 +6,7 @@
     background-color: black;
     width: 20%;
     padding-left: 1rem;
+    box-sizing: border-box;
 }
 
 .menu a{
@@ -29,7 +30,7 @@
 .menu a:active{
     color: #595858;
     font-size: 2rem;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     font-weight: 10;
 }
 
@@ -38,28 +39,9 @@
     font-size: 5rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    letter-spacing: .2rem;
 }
 
-// .activeSection{
-//     font-size: 2rem;
-//     letter-spacing: 5px;
-//     font-weight: 10;
-//     color: chartreuse;
-// }
-
-.section-title{
-    font-size: 2rem;
-    color: white;
-    letter-spacing: 5px;
-    font-weight: 10;
-}
-
-// .section-title:focus{
-//     color: chartreuse;
-// }
-// .section-title:hover{
-//     color: chartreuse;
-// }
 
 .photos{
     width: 80%;
@@ -83,4 +65,95 @@
     -webkit-filter: brightness(0.8);
 }
 
+.singleNavLink{
+    font-size: 2rem;  
+    letter-spacing: .3rem; 
+    font-weight: 10; 
+}
 
+
+@media(max-width: 1100px){
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .navLinks{
+        display: flex;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .logo{
+        margin-left: 0px;
+        display: inline-block;
+    }
+
+    .navLinkPair{
+        display: flex;
+        flex-direction: column;        
+        margin: .4rem;
+    }
+
+    .photos{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 800px){
+
+    .menu{
+        flex-direction: column;
+    }
+
+    .logo{
+           font-size: 3rem;
+           margin: 0px;
+       }
+
+    .navLinkPair{
+        display: flex;
+        flex-direction: column;        
+        margin: .4rem;
+    }
+
+    .photos{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 600px){
+    .singleNavLink{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 490px){
+    .singleNavLink{
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@media(max-width: 400px){
+.singleNavLink{
+    font-size: .8rem;
+}
+}
+
+@media(max-width: 320px){
+    .singleNavLink{
+       letter-spacing: .1rem;
+    }
+    }
+    

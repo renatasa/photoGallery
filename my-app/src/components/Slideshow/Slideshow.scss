@@ -5,6 +5,13 @@
 .slideImg{
    width: 50%;
    margin-left: 25%;
+   transition: all .3s ease-out;
+   transform: translateY(0vh);
+   opacity: 1;
+}
+
+.closedImg{
+  display: none;
 }
 
 .prev,
