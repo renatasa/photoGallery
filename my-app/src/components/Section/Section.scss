@@ -45,6 +45,8 @@
 
 .photos{
     width: 80%;
+    transition: all .3s ease-out;
+    opacity: 1;
 }
 
 .photo-row{
@@ -70,6 +72,40 @@
     letter-spacing: .3rem; 
     font-weight: 10; 
 }
+
+.fade3 {
+    -webkit-animation-name: fade3;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade3;
+    animation-duration: .5s;
+  }
+
+  .fade4{
+    -webkit-animation-name: fade4;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade4;
+    animation-duration: .5s;
+  }
+
+  @-webkit-keyframes fade3 {
+    0% {opacity: .4;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fade3 {
+    0% {opacity: .4; }
+    100% {opacity: 1;}
+  }
+
+  @-webkit-keyframes fade4 {
+    0% {opacity: .4;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes fade4 {
+    0% {opacity: .4;}
+    100% {opacity: 1;}
+  }
 
 
 @media(max-width: 1100px){
