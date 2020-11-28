@@ -12,7 +12,8 @@ export class Section extends Component {
             selectedPhotoKey:null,
             allPhotosSmall:[], 
             allPhotosLarge:[], 
-            photoFade: null
+            photoFade: null, 
+            sectionAnimation: false
         }
     }
 
@@ -78,9 +79,13 @@ export class Section extends Component {
         }
     }
 
+    sectionAnimationFn=()=>{
+        this.setState({sectionAnimation: !this.state.sectionAnimation})
+    }
+
 
     render() {
-        console.log('fade ', this.state.photoFade)
+      //  console.log('fade ', this.state.photoFade)
         let result=null;
              result =<div class="home">
 
@@ -93,24 +98,24 @@ export class Section extends Component {
             <div class="navLinks">
 
             <div class="navLinkPair">
-            <NavLink to="/people" style={{textDecoration: 'none'}}>  <div class="singleNavLink" >people</div></NavLink>
-            <NavLink to="/landscape"  style={{ textDecoration: 'none' }} ><div class="singleNavLink">landscape</div></NavLink> 
+            <NavLink to="/people" style={{textDecoration: 'none'}}>  <div class="singleNavLink" onClick={()=>this.sectionAnimationFn()} >people</div></NavLink>
+            <NavLink to="/landscape"  style={{ textDecoration: 'none' }} ><div class="singleNavLink" onClick={()=>this.sectionAnimationFn()}>landscape</div></NavLink> 
             </div>
 
             <div class="navLinkPair">
-            <NavLink to="/street" style={{ textDecoration: 'none' }} ><div class="singleNavLink">street</div></NavLink> 
-            <NavLink to="/reportage" style={{ textDecoration: 'none'}} ><div class="singleNavLink">reportage</div></NavLink> 
+            <NavLink to="/street" style={{ textDecoration: 'none' }} ><div class="singleNavLink" onClick={()=>this.sectionAnimationFn()}>street</div></NavLink> 
+            <NavLink to="/reportage" style={{ textDecoration: 'none'}} ><div class="singleNavLink" onClick={()=>this.sectionAnimationFn()}>reportage</div></NavLink> 
             </div>
 
             <div class="navLinkPair">
-            <NavLink to="/siluets" style={{ textDecoration: 'none'}} ><div class="singleNavLink">siluets</div></NavLink> 
-            <NavLink to="/travel" style={{ textDecoration: 'none'}} ><div class="singleNavLink">travel</div></NavLink> 
+            <NavLink to="/siluets" style={{ textDecoration: 'none'}} ><div class="singleNavLink" onClick={()=>this.sectionAnimationFn()}>siluets</div></NavLink> 
+            <NavLink to="/travel" style={{ textDecoration: 'none'}} ><div class="singleNavLink" onClick={()=>this.sectionAnimationFn()}>travel</div></NavLink> 
             </div>
 
             </div>
             </div>
      
-             <div class="photos">
+             <div class={this.state.sectionAnimation ? "photos fade3" : "photos fade4"}>
              <div class="photo-row">
               <img class="rowImg" onClick={()=>this.openSlide(this.props.oneL, 0)} src={this.props.one} alt="imgOne"/>
               <img class="rowImg" onClick={()=>this.openSlide(this.props.twoL, 1)} src={this.props.two} alt="imgTwo"/>
