@@ -85,7 +85,6 @@ export class Section extends Component {
 
 
     render() {
-      //  console.log('fade ', this.state.photoFade)
         let result=null;
              result =<div class="home">
 
