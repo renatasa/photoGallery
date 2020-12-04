@@ -3,7 +3,7 @@
     z-index: 3;
     background-color: white;
     width: 80vw;
-    height: 80vh;
+    height: 28rem;
     border: 1px solid #ccc;
     padding: 16px;
     left: 10vw;
@@ -31,79 +31,62 @@
     opacity: 1;
 }
 
-@media(max-width: 1200px){
-    .Modal{
-        top: 25%;
-    }
-} 
-
 
 @media(max-width: 840px){
     .Modal{
-        top: 25%;
-    }
-} 
-
-
-@media(max-width: 750px){
-    .Modal{
-        left: 26%;
+        height: 26rem;
     }
 } 
 
 @media(max-width: 700px){
     .Modal{
-        left: 24%;
-    }
-} 
-
-@media(max-width: 650px){
-    .Modal{
-        left: 22%;
+        height: 22rem;
     }
 } 
 
 @media(max-width: 600px){
     .Modal{
-        left: 20%;
+        height: 20rem;
     }
 } 
 
 @media(max-width: 550px){
     .Modal{
-        left: 16%;
+        height: 18rem;
     }
 } 
+
 
 @media(max-width: 500px){
     .Modal{
-        left: 12%;
+      height: 16rem;
     }
 } 
 
-@media(max-width: 450px){
+@media(max-width: 460px){
     .Modal{
-        left: 8%;
+        height: 14rem;
     }
 } 
 
 @media(max-width: 425px){
     .Modal{
-        left:4%;
+        height: 14rem;
     }
 } 
 
 @media(max-width: 400px){
     .Modal{
-        left: 2%;
+        height: 12rem;
     }
 } 
 
 
-@media(max-width: 350px){
+@media(max-width: 300px){
     .Modal{
-        width: 300px;
-        left: 2%;
+      height: 12rem;
+      width: 90vw;
+      left: 5vw;
     }
 } 
 
